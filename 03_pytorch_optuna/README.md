@@ -53,3 +53,37 @@ The notebooks include:
 * CPU and GPU implementations
 
 In the GPU version, PyTorch performs model training on CUDA while Optuna manages the hyperparameter search.
+
+## Example outputs
+
+These images are exported directly from the saved [CPU](digits_pytorch_optuna_cpu.ipynb) and [GPU](digits_pytorch_optuna_gpu.ipynb) notebook outputs.
+
+### GPU hyperparameter search
+
+Each point represents a trial's learning rate and hidden-layer sizes. Color indicates validation accuracy.
+
+![Optuna GPU hyperparameter search in three dimensions, colored by validation accuracy](../assets/images/optuna-gpu-hyperparameter-search.png)
+
+### GPU validation accuracy across trials
+
+The best validation accuracy in this saved 20-trial study was **99.31%**.
+
+![Validation accuracy across 20 Optuna GPU trials](../assets/images/optuna-gpu-trial-performance.png)
+
+### GPU final test evaluation
+
+After retraining with the selected hyperparameters, the saved GPU run achieved **97.78% test accuracy** on the untouched test set.
+
+![Confusion matrix for the final Optuna-tuned PyTorch GPU model](../assets/images/optuna-gpu-confusion-matrix.png)
+
+### CPU final training loss
+
+After selecting the best hyperparameters, the CPU notebook retrains the model on the combined training and validation data for 20 epochs.
+
+![Optuna CPU final model training loss decreasing over 20 epochs](../assets/images/optuna-cpu-training-loss.png)
+
+### CPU final test evaluation
+
+The saved CPU run achieved **96.94% test accuracy**, with 11 misclassifications among 360 test images.
+
+![Confusion matrix for the final Optuna-tuned PyTorch CPU model](../assets/images/optuna-cpu-confusion-matrix.png)

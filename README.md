@@ -10,10 +10,32 @@ The project progresses through three implementations:
 
 The project uses the built-in scikit-learn digits dataset containing 1,797 grayscale handwritten digit images. Each image is `8 × 8` pixels and belongs to one of the classes `0–9`.
 
+## Results at a glance
+
+### Handwritten digit samples
+
+Example images from the [scikit-learn baseline](01_scikit-learn/digits_classification.ipynb).
+
+![Four grayscale handwritten digit samples with their labels](assets/images/scikit-learn-digit-samples.png)
+
+### Neural-network predictions
+
+The saved [PyTorch CPU run](02_pytorch/digits_pytorch_cpu.ipynb) achieved **98.06% test accuracy** on 360 digits.
+
+![PyTorch CPU confusion matrix showing mostly correct predictions along the diagonal](assets/images/pytorch-cpu-confusion-matrix.png)
+
+### Hyperparameter exploration
+
+The saved [Optuna GPU run](03_pytorch_optuna/digits_pytorch_optuna_gpu.ipynb) explores learning rate and hidden-layer sizes; color indicates validation accuracy.
+
+![Three-dimensional Optuna GPU hyperparameter search colored by validation accuracy](assets/images/optuna-gpu-hyperparameter-search.png)
+
 ## Project structure
 
 ```text
 ml-proj/
+├── assets/
+│   └── images/
 │
 ├── README.md
 ├── requirements.txt
@@ -32,7 +54,7 @@ ml-proj/
     ├── README.md
     ├── digits_pytorch_optuna_cpu.ipynb
     └── digits_pytorch_optuna_gpu.ipynb
-````
+```
 
 ## What is covered
 
