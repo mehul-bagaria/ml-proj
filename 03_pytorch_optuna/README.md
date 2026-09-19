@@ -87,3 +87,15 @@ After selecting the best hyperparameters, the CPU notebook retrains the model on
 The saved CPU run achieved **96.94% test accuracy**, with 11 misclassifications among 360 test images.
 
 ![Confusion matrix for the final Optuna-tuned PyTorch CPU model](../assets/images/optuna-cpu-confusion-matrix.png)
+
+### GPU hyperparameter importance
+
+Estimated importance of each hyperparameter in the saved GPU study.
+
+![Optuna GPU hyperparameter importance plot](../assets/images/optuna-gpu-parameter-importance.png)
+
+### GPU learning-rate and hidden-layer contour
+
+Validation accuracy across learning-rate and first hidden-layer-size combinations in the saved GPU study.
+
+![Optuna GPU contour plot of learning rate and first hidden-layer size](../assets/images/optuna-gpu-contour.png)
