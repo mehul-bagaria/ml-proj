@@ -140,3 +140,14 @@ No external dataset download is required.
 ## Purpose
 
 This repository is intended as a compact hands-on progression from classical machine learning to neural-network training and hyperparameter optimization using the same classification problem.
+
+## References
+
+- [scikit-learn — Recognizing hand-written digits](https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html)  
+  Used as the starting reference for the handwritten digit classification workflow and SVM baseline.
+
+- [PyTorch documentation](https://docs.pytorch.org/docs/stable/index.html)  
+  Reference for tensors, neural-network modules, training workflows, optimizers, and CUDA execution.
+
+- [Optuna documentation](https://optuna.readthedocs.io/en/stable/)  
+  Reference for defining studies, search spaces, optimization trials, and hyperparameter visualization.

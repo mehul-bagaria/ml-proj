@@ -56,7 +56,7 @@ In the GPU version, PyTorch performs model training on CUDA while Optuna manages
 
 ## Example outputs
 
-These images are exported directly from the saved [CPU](digits_pytorch_optuna_cpu.ipynb) and [GPU](digits_pytorch_optuna_gpu.ipynb) notebook outputs.
+These are some of the generated outputs from the saved [CPU](digits_pytorch_optuna_cpu.ipynb) and [GPU](digits_pytorch_optuna_gpu.ipynb) notebook runs.
 
 ### GPU hyperparameter search
 

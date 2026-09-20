@@ -46,7 +46,7 @@ The GPU notebook keeps the same model and moves the model and training batches t
 
 ## Example outputs
 
-These images are exported directly from the saved [CPU](digits_pytorch_cpu.ipynb) and [GPU](digits_pytorch_gpu.ipynb) notebook outputs.
+These are some of the generated outputs from the [CPU](digits_pytorch_cpu.ipynb) and [GPU](digits_pytorch_gpu.ipynb) notebook.
 
 ### CPU training loss
 

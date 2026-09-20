@@ -37,7 +37,7 @@ This serves as the classical machine-learning baseline for the later PyTorch imp
 
 ## Example outputs
 
-These figures were captured by running the existing notebook cells. The notebook file itself is unchanged.
+These are some of the generated outputs from the notebook.
 
 ### Digit samples
 
